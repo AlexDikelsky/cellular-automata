@@ -7,7 +7,7 @@ class Grid:
         for i in self.space:
             for j in i:
                 if j == 0:
-                    s += "."
+                    s += " "
                 else:
                     s += "#"
 
@@ -17,11 +17,16 @@ class Grid:
 
     def change_color(self, x, y):
         mid = len(self.space) // 2 
-        self.space[mid + x][mid - y] = (self.space[mid + x][mid - y] + 1) % 2
+
+        #It makes more sense for it to be
+            #[mid + y]
+        #But that gives a horizontal reflection of what most implemations give
+
+        self.space[mid - x][mid - y] = (self.space[mid - x][mid - y] + 1) % 2
 
     def get_color(self, x, y):
         mid = len(self.space) // 2 
-        return self.space[mid + x][mid - y]
+        return self.space[mid - x][mid - y]
 
 #b = Board(5)
 #
