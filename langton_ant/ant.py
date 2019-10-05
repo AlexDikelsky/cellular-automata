@@ -1,7 +1,7 @@
 class Ant:
     def __init__(self):
         self.direction = 0
-        self.x = 0
+        self.x = 0 
         self.y = 0
         #0 = up
         #1 = right
