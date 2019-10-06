@@ -30,7 +30,7 @@ class Ant:
         self.direction = (self.direction + 3) % 4
 
     def forward(self):
-        if self.direction is 0:
+        if self.direction is 0:   #Forward increases y
             self.y += 1
         elif self.direction is 1:
             self.x += 1

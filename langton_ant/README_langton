@@ -1,0 +1,9 @@
+This is an implemenation of Langton's Ant, a type of cellular automata created by Christopher Langton. It's rules are:
+
+Start in the middle of a "sea" of white tiles
+
+If the tile you are standing on is white, change its color to black, then turn right
+If the tile you are standing on is black, change its color to white, then turn left
+
+Then go forward depending on which direction you are facing.
+
